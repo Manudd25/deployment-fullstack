@@ -23,7 +23,7 @@ const Register = () => {
     body:JSON.stringify(userData)
    }
     
-   const response = await fetch("http://localhost:7777/api/users/new-user",  config  )   
+   const response = await fetch("http://localhost:8000/api/users/register",  config  )   
    const result = await response.json()
 
    if(result.error){

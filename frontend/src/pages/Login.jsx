@@ -19,7 +19,7 @@ const Login = () => {
       },
       body:JSON.stringify(userData)
      }
-     const response = await fetch("http://localhost:7777/api/users/login",config)
+     const response = await fetch("http://localhost:8000/api/users/login",config)
      const result = await response.json()
      
      if(result.error){
