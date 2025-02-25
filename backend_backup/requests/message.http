@@ -1,0 +1,28 @@
+
+
+POST http://localhost:7777/api/messages
+Content-Type: application/json
+
+{
+    "author": "67af0286c0aab651a5882c32",
+    "message":"HOW ARE U ?"
+}
+
+
+###
+/////
+GET http://localhost:7777/api/messages
+
+###
+PATCH  http://localhost:7777/api/messages/67af09b9a00e341ffc176d83
+Content-Type: application/json
+
+{
+
+    "author":"67af0286c0aab651a5882c32",
+    "message":"I AM GOING TO GYM"
+}
+
+
+###
+DELETE  http://localhost:7777/api/messages/67af0735437b420f03f8522c
